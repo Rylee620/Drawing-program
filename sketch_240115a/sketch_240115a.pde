@@ -5,12 +5,11 @@ float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeigh
 PFont generalFont;
 PFont Candara;
 //
-void setup() {  
-  //
-  //Mandatory: mistake display orientation should break the app, feedback to the Console & Canvas
-  fullScreen(); // fullScreen(); displayWidth, displayHeight
-  generalFont = createFont("Candara", 45);
+void setup() { 
   population();
+  stButDraw();
+  fullScreen(); 
+  generalFont = createFont("Candara", 45);
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   textQuitButton();
@@ -18,7 +17,11 @@ void setup() {
 }//End setup
 //
 void draw() {
-  if ( draw==true ) line( mouseX, mouseY, pmouseX, pmouseY );//End Line Draw
+  if ( draw==true ){
+  stroke(10);
+  line( mouseX, mouseY, pmouseX, pmouseY );//End Line Draw
+  noStroke();
+  }
 }//End draw
 //
 void keyPressed() {
