@@ -14,4 +14,19 @@ textFont(generalFont, size);
 text( Quit, xRectQuit, yRectQuit, rectWidth, rectHeight);
 fill(255);
 }
-void text() {}//End text()
+void strokeText() {
+fill(255);
+textAlign (CENTER, CENTER);
+int size = 35;
+textFont(generalFont, size);
+text( sbtxt, sbx, sby, mbw, mbh);
+fill(255);
+}
+void colorText() {
+fill(255);
+textAlign (CENTER, CENTER);
+int size = 35;
+textFont(generalFont, size);
+text( cbtxt, cbx, cby, mbw, mbh);
+fill(255);
+}

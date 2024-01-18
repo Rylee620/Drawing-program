@@ -18,7 +18,9 @@ void setup() {
 //
 void draw() {
    stButDraw();
+   strokeText();
    coButDraw();
+   colorText();
   if ( draw==true ){
   strokeWeight (drawStroke);
   stroke(drawColor);
@@ -34,15 +36,13 @@ void keyPressed() {
 void mousePressed() {
   sbMP();
   cbMP();
-  //Paper-Button
+  
   if ( mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight ) {
     if ( draw==true ) {
       draw=false;
     } else {
       draw=true;
-    }//End draw Boolean
-  }//End Paper Button (Draw Surface)
+    }
+  }
   if ( mouseX>=xRectQuit && mouseX<=xRectQuit+rectWidth && mouseY>=yRectQuit && mouseY<=yRectQuit+rectHeight ) exit();
-}//End mousePressed
-//
-//End MAIN
+}
