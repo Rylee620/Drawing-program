@@ -89,18 +89,18 @@ void stButDraw () {
 
  void thinMP() {
    if(strokeButtonON == true && mouseX>thinX && mouseX<thinX+strSelW && mouseY>thinY && mouseY<thinY+strSelH)
-   drawStroke = 50;
+   drawStroke = 1;
    
  }
  
   void medMP() {
    if(strokeButtonON == true && mouseX>medX && mouseX<medX+strSelW && mouseY>medY && mouseY<medY+strSelH)
-   drawStroke = 20;
+   drawStroke = 10;
    
  }
  
    void thickMP() {
    if(strokeButtonON == true && mouseX>thickX && mouseX<thickX+strSelW && mouseY>thickY && mouseY<thickY+strSelH)
-   drawStroke = 1;
+   drawStroke = 25;
    
  } 

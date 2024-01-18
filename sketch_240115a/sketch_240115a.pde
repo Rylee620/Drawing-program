@@ -20,7 +20,7 @@ void draw() {
    stButDraw();
    coButDraw();
   if ( draw==true ){
-  stroke (drawStroke);
+  strokeWeight (drawStroke);
   stroke(drawColor);
   line( mouseX, mouseY, pmouseX, pmouseY );//End Line Draw
   fill(255);
