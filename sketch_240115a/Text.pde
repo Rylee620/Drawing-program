@@ -1,5 +1,7 @@
 String Quit = ("X");
-color Black = (#000000), Red = (#FF0D0D), Blue = (#0005F0), Gray = (#737376), LGray=(#E8E8E8);
+color Black = (#000000), White = (#FFFFFF), Red = (#FF0D0D), Blue = (#0590FF),
+Gray = (#737376), LGray=(#E8E8E8), Orange=(#FF5500), Yellow=(#FAFF00), 
+Lgreen=(#00FA4D), Dgreen =(#016A00), Dblue=(#0009E8), Lpurple=(#B703FF), Pink=(#FF03E6) ;
 void textQuitButton() {
 fill(Red);
 rect(xRectQuit, yRectQuit, rectWidth, rectHeight);

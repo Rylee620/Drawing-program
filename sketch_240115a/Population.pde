@@ -1,5 +1,8 @@
 
 void population() {
+  drawStroke = 1;
+  reset = 1;
+  
   drawingSurfaceX = displayWidth*1/7;
   drawingSurfaceY = displayHeight*1/5;
   drawingSurfaceWidth = displayWidth*3/4;
@@ -44,26 +47,27 @@ void population() {
              cbmx = mw;
              cbmy = displayHeight*1/8;
              
-             colorW = eraserW = sideMenuW*1/5;
-             colorH = sideMenuH*1/3;
+             colorW = eraserW = cbmx*1/2;
+             colorH = displayHeight*1/10;
              
-             redY = orangeY = yellowY = LgreenY = eraserY = cbmy;
-             DgreenY = DblueY = LblueY = LpurpleY = cbmy + cbmy*1/3;
-             pinkY = whiteY = greyY = blackY = cbmy + cbmy*2/3;
+             redY = orangeY = yellowY = LgreenY = eraserY = cbmy*1/100;
+             DgreenY = DblueY = LblueY = LpurpleY = cbmy*1/100 + cbmy*1/3;
+             pinkY = whiteY = greyY = blackY = cbmy*1/100 + cbmy*2/3;
              
-             redX = LpurpleX = pinkX = cbmx;
+             redX = LpurpleX = pinkX = cbmx*3;
 
              
-             orangeX = LblueX = whiteX = cbmx + sideMenuW*1/5;
+             orangeX = LblueX = whiteX = cbmx*3 + sideMenuW*1/5;
 
              
-             yellowX = DblueX = greyX = cbmx + sideMenuW*2/5;
+             yellowX = DblueX = greyX = cbmx*3 + sideMenuW*2/5;
 
              
-             LgreenX = DgreenX = blackX = cbmx + sideMenuW*3/5;
+             LgreenX = DgreenX = blackX = cbmx*3 + sideMenuW*3/5;
              
              
-             eraserX = cbmx + sideMenuW*4/5;
+             eraserX = cbmx*3 + sideMenuW*4/5;
+            
 
              
 }//End population()

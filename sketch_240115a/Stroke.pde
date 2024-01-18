@@ -1,8 +1,6 @@
-float reset;
-float drawStroke;
+
 float sbx, sby; 
-float cbx, cby;
-color sbColor, menuColor;
+color cbColor ,sbColor, menuColor;
 String sbtxt = "Stroke";
 float sbmx, sbmy;
 float cbmx, cbmy;
@@ -18,23 +16,10 @@ float eraserX, eraserY, eraserW, eraserH;
 String thintxt = "Thin";
 String medtxt = "Medium";
 String thicktxt = "Thick";
-//colorsbuttons
-color drawColor;
-float colorW, colorH;
-float redX, redY;
-float orangeX, orangeY;
-float yellowX, yellowY;
-float LgreenX, LgreenY;
-float DgreenX, DgreenY;
-float DblueX, DblueY;
-float LblueX,  LblueY;
-float LpurpleX, LpurpleY;
-float pinkX, pinkY;
-float whiteX, whiteY;
-float greyX, greyY;
-float blackX, blackY;
 Boolean strokeButtonON = false;
 Boolean strokeButtonRESET = false;
+float drawStroke;
+float reset;
 int size;
 void stButDraw () {
   if(mouseX>=sbx && mouseX<=sbx+mbw && mouseY>=sby && mouseY<=sby+mbh) {
@@ -69,7 +54,7 @@ void stButDraw () {
     rect(medX, medY, strSelW, strSelH);
     text(medtxt, medX, medY, strSelW, strSelH);
 
-    fill(255);
+    fill(Black);
     rect(thickX, thickY, strSelW, strSelH);
     text(thicktxt, thickX, thickY, strSelW, strSelH);
     
@@ -84,5 +69,38 @@ void stButDraw () {
       fill(255);
       stroke(reset);
  }
+}
+ void sbMP() {
+  thinMP();
+  medMP();
+  thickMP();
+  
+  if (mouseX>sbx && mouseX<sbx+mbw && mouseY>sby && mouseY<sby+mbh) {
+    if (strokeButtonON == false) {
+      strokeButtonON = true;
+      strokeButtonRESET = false;
+    } else {
+      strokeButtonON = false;
+      strokeButtonRESET = true;
+    }
+}
+
+}
+
+ void thinMP() {
+   if(strokeButtonON == true && mouseX>thinX && mouseX<thinX+strSelW && mouseY>thinY && mouseY<thinY+strSelH)
+   drawStroke = 50;
+   
+ }
  
-} 
+  void medMP() {
+   if(strokeButtonON == true && mouseX>medX && mouseX<medX+strSelW && mouseY>medY && mouseY<medY+strSelH)
+   drawStroke = 20;
+   
+ }
+ 
+   void thickMP() {
+   if(strokeButtonON == true && mouseX>thickX && mouseX<thickX+strSelW && mouseY>thickY && mouseY<thickY+strSelH)
+   drawStroke = 1;
+   
+ } 
