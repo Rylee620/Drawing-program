@@ -35,8 +35,7 @@ void coButDraw () {
   }
   
     if (colorButtonON == true) {
-  noStroke();
-      rect(cbmx, cbmy, sideMenuW , sideMenuH);
+   stroke(1);
       
       fill(Red);
       rect(redX, redY, colorW, colorH);
@@ -62,7 +61,7 @@ void coButDraw () {
       fill(Lpurple);
       rect(LpurpleX, LpurpleY, colorW, colorH);
       
-      fill(White);
+      fill(Cyan);
       rect(whiteX, whiteY, colorW, colorH);
       
       fill(Pink);
@@ -161,7 +160,7 @@ void LpurpleMP () {
 
 void whiteMP () {
   if (colorButtonON == true && mouseX>whiteX && mouseX<whiteX+colorW && mouseY>whiteY && mouseY<whiteY+colorH)
-     drawColor = White;
+     drawColor = Cyan;
 }
 
 void pinkMP () {

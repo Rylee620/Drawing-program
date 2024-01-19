@@ -21,6 +21,7 @@ void draw() {
    strokeText();
    coButDraw();
    colorText();
+   eraserText();
   if ( draw==true ){
   strokeWeight (drawStroke);
   stroke(drawColor);
@@ -29,10 +30,8 @@ void draw() {
   noStroke();
   }
 }//End draw
-//
 void keyPressed() {
-}//End keyPressed
-//
+}
 void mousePressed() {
   sbMP();
   cbMP();

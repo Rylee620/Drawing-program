@@ -40,13 +40,13 @@ void population() {
   cbmy = displayHeight*1/8;
              
   colorW = eraserW = cbmx*1/2;
-  colorH = displayHeight*1/10;            
+  colorH = eraserH = displayHeight*1/10;            
   redY = orangeY = yellowY = LgreenY = eraserY = cbmy*1/100;
   DgreenY = DblueY = LblueY = LpurpleY = cbmy*1/100 + cbmy*1/3;
   pinkY = whiteY = greyY = blackY = cbmy*1/100 + cbmy*2/3;             
   redX = LpurpleX = pinkX = cbmx*3;             
-  orangeX = LblueX = whiteX = cbmx*3 + sideMenuW*1/5;             
-  yellowX = DblueX = greyX = cbmx*3 + sideMenuW*2/5;             
-  LgreenX = DgreenX = blackX = cbmx*3 + sideMenuW*3/5;                          
-  eraserX = cbmx*3 + sideMenuW*4/5;             
+  orangeX = LblueX = whiteX = cbmx*3 + sideMenuW*1/6;             
+  yellowX = DblueX = greyX = cbmx*3 + sideMenuW*3/6;             
+  LgreenX = DgreenX = blackX = cbmx*3 + sideMenuW*5/6;                          
+  eraserX = cbmx*3/2 + sideMenuW*4/5;             
 }//End population()

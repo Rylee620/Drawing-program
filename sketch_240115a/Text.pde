@@ -1,7 +1,8 @@
-String Quit = ("X");
+String Quit = ("X"), Eraser =("Eraser");
 color Black = (#000000), White = (#FFFFFF), Red = (#FF0D0D), Blue = (#0590FF),
 Gray = (#737376), LGray=(#E8E8E8), Orange=(#FF5500), Yellow=(#FAFF00), 
-Lgreen=(#00FA4D), Dgreen =(#016A00), Dblue=(#0009E8), Lpurple=(#B703FF), Pink=(#FF03E6) ;
+Lgreen=(#00FA4D), Dgreen =(#016A00), Dblue=(#0009E8), Lpurple=(#B703FF), 
+Pink=(#F5548F), Cyan=(#00F5D2) ;
 void textQuitButton() {
 fill(Red);
 rect(xRectQuit, yRectQuit, rectWidth, rectHeight);
@@ -28,5 +29,13 @@ textAlign (CENTER, CENTER);
 int size = 35;
 textFont(generalFont, size);
 text( cbtxt, cbx, cby, mbw, mbh);
+fill(255);
+}
+void eraserText() {
+textAlign (CENTER, CENTER);
+int size = 35;
+textFont(generalFont, size);
+fill(Black);
+text( Eraser, eraserX, eraserY, eraserW, eraserH);
 fill(255);
 }
